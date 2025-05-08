@@ -1,9 +1,8 @@
 <?php
 
-require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../models/Menu.php';
 
-class MenuController extends Controller {
+class MenuController {
     private $menuModel;
     
     public function __construct() {

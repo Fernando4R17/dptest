@@ -64,15 +64,6 @@ class Menu {
     }
 
     /**
-     * Delete a menu
-     */
-    public function deleteMenu($id) {
-        $stmt = $this->db->prepare("DELETE FROM {$this->table} WHERE id_menu = :id");
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        return $stmt->execute();
-    }
-
-    /**
      * Get all parent menus for dropdown selection
      */
     public function getAllParentMenus() {

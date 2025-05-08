@@ -30,39 +30,6 @@ body {
     overflow: hidden;
 }
 
-header {
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    display: none;
-}
-
-header h1 {
-    color: #333;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
 .content-wrapper {
     display: flex;
     flex: 1;
@@ -157,7 +124,6 @@ nav ul li a:hover {
     background-color: #cccccc;
 }
 
-/* Admin section at the bottom of sidebar */
 .admin-section {
     padding-top: 5px;
     margin-bottom: 0;
@@ -170,7 +136,6 @@ nav ul li a:hover {
     padding-left: 0;
 }
 
-/* Styles for child menu items in sidebar */
 .sidebar ul li.menu-child {
     padding-left: 0;
 }
@@ -205,7 +170,6 @@ nav ul li a:hover {
     content: '';
 }
 
-/* Active menu item styling */
 .sidebar ul li a.active {
     background-color: #444;
 }
@@ -231,7 +195,6 @@ main {
     height: 100%;
 }
 
-/* Content sections */
 .content-section {
     display: none;
     height: 100%;
@@ -242,7 +205,6 @@ main {
     flex-direction: column;
 }
 
-/* Table Styles */
 .table-container {
     width: 100%;
     border: 2px solid #002855;
@@ -298,17 +260,11 @@ table th {
     z-index: 1;
 }
 
-table tr:hover {
-    background-color: #f5f5f5;
-}
-
-/* Table actions styles */
 .actions-cell {
     padding: 8px 10px !important;
     width: 180px;
 }
 
-/* Form Styles */
 .form-container {
     width: 100%;
     border: 2px solid #002855;
@@ -375,7 +331,6 @@ table tr:hover {
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
-/* Description textarea styles */
 .description-group {
     flex: 1;
     display: flex;
@@ -403,20 +358,11 @@ table tr:hover {
     color: white;
 }
 
-.btn-cancel:hover {
-    background-color: #c82333;
-}
-
 .btn-save {
     background-color: #28a745;
     color: white;
 }
 
-.btn-save:hover {
-    background-color: #218838;
-}
-
-/* Paginator */
 .paginator {
     display: flex;
     justify-content: flex-end;
@@ -449,32 +395,31 @@ table tr:hover {
     border-color: #007bff;
 }
 
-.paginator-button:hover:not(.active) {
-    background-color: #f0f0f0;
-}
-
 .paginator-info {
     margin-right: 15px;
     color: #666;
     font-size: 14px;
 }
 
-/* Welcome Section Styles */
-.welcome-section {
-    margin-bottom: 30px;
+.welcome-message {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.welcome-section h2 {
-    color: #007bff;
+.welcome-message h2 {
+    color: #002855;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-.welcome-section p {
-    margin-bottom: 20px;
-    font-size: 16px;
+.welcome-message p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Table Actions */
 .table-actions {
     display: flex;
     align-items: center;
@@ -493,31 +438,11 @@ table tr:hover {
     color: white;
 }
 
-.btn-add:hover {
-    background-color: #218838;
-}
-
 .no-data {
     text-align: center;
     padding: 30px !important;
     color: #777;
     font-style: italic;
-}
-
-/* Error Section Styles */
-.error-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.error-section h2 {
-    color: #dc3545;
-    margin-bottom: 20px;
-}
-
-.error-section p {
-    margin-bottom: 20px;
-    font-size: 18px;
 }
 
 .actions {
@@ -544,52 +469,9 @@ table tr:hover {
     color: white;
 }
 
-.btn-edit:hover {
-    background-color: #0056b3;
-}
-
 .btn-delete {
     background-color: #dc3545;
     color: white;
-}
-
-.btn-delete:hover {
-    background-color: #c82333;
-}
-
-.loading-row td {
-    text-align: center;
-    padding: 20px;
-    font-style: italic;
-    color: #666;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
-    color: #777;
-    display: none;
-}
-
-/* Welcome Message Styles */
-.welcome-message {
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.welcome-message h2 {
-    color: #002855;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.welcome-message p {
-    color: #666;
-    font-size: 18px;
-    line-height: 1.6;
 }
 
 .actions a.btn-edit {

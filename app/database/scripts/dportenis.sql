@@ -18,13 +18,11 @@ INSERT INTO menus (name, description) VALUES
 ('Áreas', 'Listado de Áreas');
 SET @areas_id = LAST_INSERT_ID();
 
--- Insert child menus under "Catálogos"
 INSERT INTO menus (name, id_parent, description) VALUES
 ('Países', @cat_id, 'Listado de Países'),
 ('Estados', @cat_id, 'Listado de Estados'),
 ('Ciudades', @cat_id, 'Listado de Ciudades');
 
--- Insert child menus under "Áreas"
 INSERT INTO menus (name, id_parent, description) VALUES
 ('Finanzas', @areas_id, 'Trabajadores de Finanzas'),
 ('TI', @areas_id, 'Trabajadores de TI');
